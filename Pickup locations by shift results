@@ -1,0 +1,6 @@
+-- Create @Borough
+DECLARE @Borough as nvarchar(30) = 'Manhattan'
+-- Execute the SP
+EXEC dbo.cuspPickupZoneShiftStats
+    -- Pass @Borough
+	@Borough = @Borough;
